@@ -1,0 +1,54 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: grey;
+}
+
+#container {
+	position:fixed;
+	top:50px;
+	left:50px;
+    width:80%;
+    height:40%;
+    /*background-color:lightcyan;*/
+
+    transform: perspective(300px) rotateX(45deg);
+    -webkit-transform: perspective(300px) rotateX(45deg);
+}
+
+#optsList {
+	position:absolute;
+	/*background-color:rgba(191, 0, 255, 0.1);*/
+	width:100%;
+    left:150px;
+}
+
+.option {
+    width: 80%;
+    height:50px;
+    padding: 10px;
+    background-color:lightcoral;
+    margin:5px;
+
+    text-align:center;
+    font-size:40px;
+}
+
+.blocker {
+    position: fixed;
+    background-color: grey;
+}
+
+#blockerTop {
+    width:100%;
+    top:0px;
+    height:100px;
+}
+#blockerBottom {
+    width:100%;
+    top:calc(100px + 30%);
+    height:calc(70% - 100px);
+}
